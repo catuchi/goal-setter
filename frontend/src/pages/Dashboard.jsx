@@ -24,7 +24,10 @@ function Dashboard() {
       navigate("/login");
     }
 
-    dispatch(getGoals(user.token));
+    if (user) {
+      dispatch(getGoals());
+    }
+    // dispatch(getGoals(user.token));
 
     return () => {
       dispatch(reset());
