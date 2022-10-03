@@ -24,9 +24,7 @@ function Dashboard() {
       navigate("/login");
     }
 
-    if (user) {
-      dispatch(getGoals(user.token));
-    }
+    dispatch(getGoals(user.token));
 
     return () => {
       dispatch(reset());
