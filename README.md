@@ -30,6 +30,9 @@ Install dependencies
 
 ```bash
   npm install
+  
+  cd frontend
+  npm install
 ```
 
 Start the server & client concurrently
